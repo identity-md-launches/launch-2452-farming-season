@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "FarmingSeason",
+    "name": "Farming Season",
+    "symbol": "SEASON",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "4500000000000000000000",
+    "remainderTo": "0xd0116c7e933029a0abfa388757a3d7a7686ee681"
+  },
+  "notes": "FarmingSeason is an ERC-20 with 18 decimals. Its no-argument constructor mints the entire fixed supply of 1,000,000,000 SEASON to msg.sender, the factory during launch. It has no owner, further minting, external burning, transfer fees, or upgrade mechanism. No application contracts are deployed. The pool pairs SEASON with IMD at a 1.25% fee. pool.initialPrice records provenance only; the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
